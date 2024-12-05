@@ -47,3 +47,5 @@ class Book {
         this.synopsis = newSynopsis;
     }
 }
+
+export {Book};
