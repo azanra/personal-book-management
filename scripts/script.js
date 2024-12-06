@@ -1,5 +1,6 @@
 import { Books } from "./modules/models/books.js";
 import { Book } from "./modules/models/book.js";
+import { AddBtn } from "./modules/views/addBtn.js";
 
 let bookArr = new Books();
 bookArr.newBook("1", "title", "author", "genre", "synopsis");
@@ -17,3 +18,5 @@ anotherArr.deleteBook("3");
 
 
 console.log(anotherArr);
+
+let createBtn = new AddBtn();
