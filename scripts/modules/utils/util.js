@@ -3,9 +3,9 @@ class Util {
         let element = document.querySelector(ele);
         return element;
     }
-    static setMultipleAttr(element, attr) {
-        for(const key in attr) {
-            element.setAttribute(key, attr[key]);
+    static setMultipleAttr(element, obj) {
+        for(const key in obj) {
+            element.setAttribute(key, obj[key]);
         }
     }
 }
