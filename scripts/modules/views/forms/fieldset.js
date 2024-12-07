@@ -8,7 +8,7 @@ class Fieldset {
         const rootEle = Util.referenceEle(".root");
         const fieldsetEle = document.createElement("fieldset");
         rootEle.append(fieldsetEle);
-        Util.setMultipleAttr(rootEle, fieldsetAttr);
+        Util.setMultipleAttr(fieldsetEle, fieldsetAttr);
     }
 }
 
