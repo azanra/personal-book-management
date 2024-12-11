@@ -1,17 +1,18 @@
 const labelAttr = [
     {
         for : "id-input",
-        textContent : "Id :", 
+        textContent : "Id : ", 
         container : "id-container",
         inputAttr : {
             "type" : "text",
             "id" : "id-input",
-            "name" : "id"
+            "name" : "id",
+            "required" : ""
         }
     },
     {
         for : "title-input",
-        textContent : "Title :",
+        textContent : "Title : ",
         container : "title-container",
         inputAttr : {
             "type" : "text",
@@ -22,7 +23,7 @@ const labelAttr = [
     },
     {
         for : "author-input",
-        textContent : "Author :",
+        textContent : "Author : ",
         container : "author-container",
         inputAttr : {
             "type" : "text",
@@ -32,7 +33,7 @@ const labelAttr = [
     },
     {
         for : "genre-input",
-        textContent : "Genre :",
+        textContent : "Genre : ",
         container : "genre-container",
         inputAttr : {
             "type" : "text",
@@ -42,7 +43,7 @@ const labelAttr = [
     },
     {
         for : "synopsis-input",
-        textContent : "Synopsis",
+        textContent : "Synopsis : ",
         container : "synopsis-container",
         areaAttr : {
             "id" : "synopsis-input",
