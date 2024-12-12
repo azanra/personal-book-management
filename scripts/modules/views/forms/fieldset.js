@@ -1,14 +1,13 @@
 import { Util } from "../../utils/util.js";
+import { fieldsetAttr } from "./eleAttr/fieldsetAttr.js";
 
 class Fieldset {
-    constructor() {
-        const fieldsetAttr = {
-            "id": "input-section"
-        }
+    constructor(type) {
+
         const rootEle = Util.referenceEle(".root");
         const fieldsetEle = document.createElement("fieldset");
         rootEle.append(fieldsetEle);
-        Util.setMultipleAttr(fieldsetEle, fieldsetAttr);
+        fieldsetEle.setAttribute("id", fieldsetAttr[type])
     }
 }
 

@@ -2,6 +2,7 @@ import { Books } from "./modules/models/books.js";
 import { Book } from "./modules/models/book.js";
 import { AddBtn } from "./modules/views/addBtn.js";
 import { CreateView } from "./modules/views/create.js";
+import { UpdateView } from "./modules/views/update.js";
 
 let bookArr = new Books();
 bookArr.newBook("1", "title", "author", "genre", "synopsis");
@@ -22,3 +23,4 @@ console.log(anotherArr);
 
 let createBtn = new AddBtn();
 let createViewEle = new CreateView();
+let updateViewEle = new UpdateView();

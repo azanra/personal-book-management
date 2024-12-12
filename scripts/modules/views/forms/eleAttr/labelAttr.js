@@ -8,6 +8,12 @@ const labelAttr = [
             "id" : "id-input",
             "name" : "id",
             "required" : ""
+        },
+        updateAttr : {
+            "type" : "text",
+            "id" : "id-update",
+            "name" : "id",
+            "readonly" : ""
         }
     },
     {
@@ -17,9 +23,13 @@ const labelAttr = [
         inputAttr : {
             "type" : "text",
             "id" : "title-input",
-            "name" : "name"
+            "name" : "title"
+        },
+        updateAttr : {
+            "type" : "text",
+            "id" : "title-update",
+            "name" : "title"
         }
-
     },
     {
         for : "author-input",
@@ -28,6 +38,11 @@ const labelAttr = [
         inputAttr : {
             "type" : "text",
             "id" : "author-input",
+            "name" : "author"
+        },
+        updateAttr : {
+            "type" : "text",
+            "id" : "author-update",
             "name" : "author"
         }
     },
@@ -39,6 +54,11 @@ const labelAttr = [
             "type" : "text",
             "id" : "genre-input",
             "name" : "genre"
+        },
+        updateAttr : {
+            "type" : "text",
+            "id" : "genre-update",
+            "name" : "genre"
         }
     },
     {
@@ -47,6 +67,12 @@ const labelAttr = [
         container : "synopsis-container",
         areaAttr : {
             "id" : "synopsis-input",
+            "name" : "synopsis",
+            "rows" : "5",
+            "col" : "25"
+        },
+        areaUpdateAttr : {
+            "id" : "synopsis-update",
             "name" : "synopsis",
             "rows" : "5",
             "col" : "25"

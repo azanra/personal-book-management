@@ -9,22 +9,22 @@ import { btnAttr } from "./forms/btnAttr/btnAttr.js";
 
 class CreateView {
     constructor() {
-        const fieldsetEle = new Fieldset();
-        const legendEle = new Legend();
+        const fieldsetEle = new Fieldset(0);
+        const legendEle = new Legend(0);
 
-        const idLabelEle = new Label(0);
-        const idInputEle = new Input(0)
+        const idLabelEle = new Label(0, 0, "create");
+        const idInputEle = new Input(0, "create")
 
-        const titleLabelEle = new Label(1);
-        const titleInputEle = new Input(1);
+        const titleLabelEle = new Label(1, 0, "create");
+        const titleInputEle = new Input(1, "create");
 
-        const authorLabelEle = new Label(2);
-        const authorInputEle = new Input(2);
+        const authorLabelEle = new Label(2, 0, "create");
+        const authorInputEle = new Input(2, "create");
 
-        const genreLabelEle = new Label(3);
-        const genreInputEle = new Input(3);
+        const genreLabelEle = new Label(3, 0, "create");
+        const genreInputEle = new Input(3, "create");
 
-        const synopsisLabelEle = new Label(4);
+        const synopsisLabelEle = new Label(4, 0, "create");
         const synopsisAreaEle = new Element(".synopsis-container", "textarea", labelAttr[4].areaAttr);
         
 
