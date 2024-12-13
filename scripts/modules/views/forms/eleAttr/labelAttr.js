@@ -9,7 +9,7 @@ const labelAttr = [
             "name" : "id",
             "required" : ""
         },
-        updateInput : {
+        updateAttr : {
             "type" : "text",
             "id" : "id-update",
             "name" : "id",

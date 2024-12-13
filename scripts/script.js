@@ -22,5 +22,5 @@ anotherArr.deleteBook("3");
 console.log(anotherArr);
 
 let createBtn = new AddBtn();
-let createViewEle = new CreateView();
-// let updateViewEle = new UpdateView();
+// let createViewEle = new CreateView();
+let updateViewEle = new UpdateView();

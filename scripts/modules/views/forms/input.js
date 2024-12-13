@@ -1,5 +1,4 @@
 import { Util } from "../../utils/util.js";
-import { fieldsetAttr } from "./eleAttr/fieldsetAttr.js";
 import { labelAttr } from "./eleAttr/labelAttr.js";
 
 class Input {    
