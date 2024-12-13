@@ -23,4 +23,4 @@ console.log(anotherArr);
 
 let createBtn = new AddBtn();
 let createViewEle = new CreateView();
-let updateViewEle = new UpdateView();
+// let updateViewEle = new UpdateView();

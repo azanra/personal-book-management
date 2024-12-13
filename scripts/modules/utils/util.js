@@ -19,24 +19,6 @@ class Util {
             Util.setMultipleAttr(inputEle,  labelAttr[type].updateAttr)
         }
     }
-    static checkDivParent(type, operation) {
-        let temp = "";
-        if(operation === "create"){
-            return temp = `${labelAttr[type].container}`;
-        }
-        if(operation === "update"){
-            return temp = `${labelAttr[type].container}`;
-        }
-    }
-    static checkEleParent(type, operation) {
-        let temp = "";
-        if(operation === "create"){
-            return temp = Util.referenceEle(`.${labelAttr[type].container}`);
-        }
-        if(operation === "update"){
-            return  temp = Util.referenceEle(`.${labelAttr[type].container}`);
-        }
-    }
 }
 
 export {Util};

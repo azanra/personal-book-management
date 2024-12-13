@@ -9,7 +9,7 @@ class UpdateView {
         const updateFieldset = new Fieldset(1);
         const updateLegend = new Legend(1);
 
-        const updateIdLabel = new Label(0, 1, "update");
+        const updateIdLabel = new Label(0, 1);
         const updateIdInput = new Input(0, "update");
 
     }
