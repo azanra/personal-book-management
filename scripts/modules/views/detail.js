@@ -7,23 +7,23 @@ import { labelAttr } from "./forms/eleAttr/labelAttr.js";
 
 class DetailView {
     constructor() {
-        const updateFieldset = new Fieldset(2);
-        const updateLegend = new Legend(2);
+        const detailFieldset = new Fieldset(2);
+        const detailLegend = new Legend(2);
 
-        const updateIdLabel = new Label(0, 2);
-        const updateIdInput = new Input(0, "update");
+        const detailIdLabel = new Label(0, 2);
+        const detailIdInput = new Input(0, "detail");
 
-        const updateTitleLabel = new Label(1, 2);
-        const updateTitleInput = new Input(1, "update");
+        const detailTitleLabel = new Label(1, 2);
+        const detailTitleInput = new Input(1, "detail");
 
-        const updateAuthorLabel = new Label(2, 2);
-        const updateAuthorInput = new Input(2, "update");
+        const detailAuthorLabel = new Label(2, 2);
+        const detailAuthorInput = new Input(2, "detail");
 
-        const updateGenreLabel = new Label(3, 2);
-        const updateGenreInput = new Input(3, "update");
+        const detailGenreLabel = new Label(3, 2);
+        const detailGenreInput = new Input(3, "detail");
 
-        const updateSynopsisLabel = new Label(4, 2);
-        const updateSynopsisArea = new Element(".synopsis-container", "textarea", labelAttr[4].attr);
+        const detailSynopsisLabel = new Label(4, 2);
+        const detailSynopsisArea = new Element(".synopsis-container", "textarea", labelAttr[4].detailAttr);
 
     }
 }

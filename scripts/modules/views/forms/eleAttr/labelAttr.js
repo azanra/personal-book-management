@@ -77,6 +77,12 @@ const labelAttr = [
             "type" : "text",
             "id" : "genre-input",
             "name" : "genre"
+        },
+        detailAttr : {
+            "type" : "text",
+            "id" : "genre-input",
+            "name" : "genre",
+            "disabled" : ""
         }
     },
     {
