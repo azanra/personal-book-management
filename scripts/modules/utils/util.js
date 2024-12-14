@@ -16,7 +16,10 @@ class Util {
             Util.setMultipleAttr(inputEle, labelAttr[type].inputAttr);
         }
         if(operation === "update"){
-            Util.setMultipleAttr(inputEle,  labelAttr[type].updateAttr)
+            Util.setMultipleAttr(inputEle,  labelAttr[type].attr)
+        }
+        if(operation === "detail") {
+            Util.setMultipleAttr(inputEle, labelAttr[type].detailAttr);
         }
     }
 }

@@ -9,11 +9,17 @@ const labelAttr = [
             "name" : "id",
             "required" : ""
         },
-        updateAttr : {
+        attr : {
             "type" : "text",
-            "id" : "id-update",
+            "id" : "id-input",
             "name" : "id",
             "readonly" : ""
+        },
+        detailAttr : {
+            "type" : "text",
+            "id" : "id-input",
+            "name" : "id",
+            "disabled" : ""
         }
     },
     {
@@ -25,10 +31,16 @@ const labelAttr = [
             "id" : "title-input",
             "name" : "title"
         },
-        updateAttr : {
+        attr : {
             "type" : "text",
-            "id" : "title-update",
+            "id" : "title-input",
             "name" : "title"
+        },
+        detailAttr : {
+            "type" : "text",
+            "id" : "title-input",
+            "name" : "title",
+            "disabled" : ""
         }
     },
     {
@@ -40,10 +52,16 @@ const labelAttr = [
             "id" : "author-input",
             "name" : "author"
         },
-        updateAttr : {
+        attr : {
             "type" : "text",
-            "id" : "author-update",
+            "id" : "author-input",
             "name" : "author"
+        },
+        detailAttr : {
+            "type" : "text",
+            "id" : "author-input",
+            "name" : "author",
+            "disabled" : ""
         }
     },
     {
@@ -55,9 +73,9 @@ const labelAttr = [
             "id" : "genre-input",
             "name" : "genre"
         },
-        updateAttr : {
+        attr : {
             "type" : "text",
-            "id" : "genre-update",
+            "id" : "genre-input",
             "name" : "genre"
         }
     },
@@ -71,11 +89,18 @@ const labelAttr = [
             "rows" : "5",
             "col" : "25"
         },
-        areaUpdateAttr : {
-            "id" : "synopsis-update",
+        attr : {
+            "id" : "synopsis-input",
             "name" : "synopsis",
             "rows" : "5",
             "col" : "25"
+        },
+        detailAttr : {
+            "id" : "synopsis-input",
+            "name" : "synopsis",
+            "rows" : "5",
+            "col" : "25",
+            "disabled" : ""
         }
     }
 

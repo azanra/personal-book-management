@@ -24,7 +24,7 @@ class UpdateView {
         const updateGenreInput = new Input(3, "update");
 
         const updateSynopsisLabel = new Label(4, 1);
-        const updateSynopsisArea = new Element(".synopsis-container", "textarea", labelAttr[4].areaUpdateAttr);
+        const updateSynopsisArea = new Element(".synopsis-container", "textarea", labelAttr[4].attr);
 
         const updateBtnContainer = new Element("#update-section", "div", btnAttr[2].container);
         const updateBtn = new Element(".update-container", "button", btnAttr[1].eleAttr, "Update");
