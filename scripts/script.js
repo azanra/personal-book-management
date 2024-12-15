@@ -4,6 +4,7 @@ import { AddBtn } from "./modules/views/addBtn.js";
 import { CreateView } from "./modules/views/create.js";
 import { UpdateView } from "./modules/views/update.js";
 import { DetailView } from "./modules/views/detail.js";
+import { ReadView } from "./modules/views/read.js";
 
 let bookArr = new Books();
 bookArr.newBook("1", "title", "author", "genre", "synopsis");
@@ -23,6 +24,9 @@ anotherArr.deleteBook("3");
 console.log(anotherArr);
 
 let createBtn = new AddBtn();
+let readView = new ReadView();
+bookArr.printBook();
+anotherArr.printBook();
 // let createViewEle = new CreateView();
 // let updateViewEle = new UpdateView();
 let detailView = new DetailView();

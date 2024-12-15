@@ -34,6 +34,11 @@ const btnAttr = [
             "type" : "button",
             "id" : "detail-btn"
         }
+    },
+    {
+        container : {
+            "class" : "read-container"
+        }
     }
 
 ]

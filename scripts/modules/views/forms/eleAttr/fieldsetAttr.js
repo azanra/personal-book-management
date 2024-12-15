@@ -1,7 +1,7 @@
 const fieldsetAttr = [
     "input-section",
     "update-section",
-    "detail-section"
+    "detail-section",
 ]
 
 export {fieldsetAttr};

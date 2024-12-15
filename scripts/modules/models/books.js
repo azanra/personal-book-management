@@ -1,3 +1,4 @@
+import { ReadView } from "../views/read.js";
 import { Book } from "./book.js";
 
 class Books {
@@ -20,6 +21,12 @@ class Books {
                 this.bookArr[i].synopsis = inputSynopsis;
             }
         }   
+    }
+
+    printBook() {
+        for(let i = 0; i < this.bookArr.length; i++) {
+            ReadView.printBookEle(this.bookArr[i]);
+        }
     }
 
     deleteBook(inputId) {
