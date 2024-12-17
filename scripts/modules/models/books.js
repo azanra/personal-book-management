@@ -25,7 +25,13 @@ class Books {
 
     printBook() {
         for(let i = 0; i < this.bookArr.length; i++) {
-            ReadView.printBookEle(this.bookArr[i]);
+            ReadView.printBookEle(this.bookArr[i], i);
+        }
+    }
+
+    bookContainer() {
+        for(let i = 0; i < this.bookArr.length; i++){
+            ReadView.bookContainer(i);      
         }
     }
 
