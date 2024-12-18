@@ -25,6 +25,7 @@ let createBtn = new AddBtn();
 let readView = new ReadView();
 bookArr.bookContainer();
 bookArr.printBook();
+bookArr.buttonContainer();
 // anotherArr.printBook();
 // let createViewEle = new CreateView();
 // let updateViewEle = new UpdateView();
