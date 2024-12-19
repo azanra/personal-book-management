@@ -20,8 +20,16 @@ class ReadView {
     }
     static bookButton(uniqueId) {
         const detailButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[3].eleAttr, "Detail");
+        const eleDetail = document.querySelector("#detail-btn");
+        eleDetail.setAttribute("id", `detail-btn-${uniqueId}`);
+        
         const updateButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[1].eleAttr, "Update");
+        const eleUpdate = document.querySelector("#update-btn");
+        eleUpdate.setAttribute("id", `update-btn${uniqueId}`);
+        
         const deleteButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[2].eleAttr, "Delete");
+        const eleDelete = document.querySelector("#delete-btn");
+        eleDelete.setAttribute("id", `delete-btn-${uniqueId}`);
     }
 }
 
