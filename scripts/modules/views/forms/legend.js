@@ -6,7 +6,8 @@ class Legend {
         const legendTextContent = [
             "Create Book",
             "Update Book",
-            "Detail Pages"
+            "Detail Pages",
+            "Delete Book"
         ]
         const fieldsetEle = Util.referenceEle(`#${fieldsetAttr[type]}`);
         const legendEle = document.createElement("legend");

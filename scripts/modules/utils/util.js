@@ -12,7 +12,7 @@ class Util {
         }
     }
     static CheckIfInputIs(inputEle, labelAttr, type, operation) {
-        if(operation === "create"){
+        if(operation === "create" || operation === "delete"){
             Util.setMultipleAttr(inputEle, labelAttr[type].inputAttr);
         }
         if(operation === "update"){
