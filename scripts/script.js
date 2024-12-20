@@ -30,7 +30,7 @@ bookArr.printBook();
 bookArr.buttonContainer();
 
 
-let createViewEle = new CreateView();
+// let createViewEle = new CreateView();
 // let updateViewEle = new UpdateView();
 // let detailView = new DetailView();
 // let deleteView = new DeleteView();
