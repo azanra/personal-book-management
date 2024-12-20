@@ -39,6 +39,15 @@ const btnAttr = [
         container : {
             "class" : "read-container"
         }
+    },
+    {
+        container : {
+            "class" : "delete-container"
+        },
+        eleAttr : {
+            "type" : "button",
+            "id" : "delete-btn"
+        }
     }
 
 ]
