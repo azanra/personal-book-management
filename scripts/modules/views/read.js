@@ -1,3 +1,4 @@
+import { ReadController } from "../controllers/readController.js";
 import { Util } from "../utils/util.js";
 import { btnAttr } from "./forms/btnAttr/btnAttr.js";
 import { paraAttr } from "./forms/eleAttr/paraAttr.js";
@@ -22,7 +23,8 @@ class ReadView {
         const detailButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[3].eleAttr, "Detail");
         const eleDetail = document.querySelector("#detail-btn");
         eleDetail.setAttribute("id", `detail-btn-${uniqueId}`);
-        
+        ReadController.detailController(eleDetail);
+
         const updateButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[1].eleAttr, "Update");
         const eleUpdate = document.querySelector("#update-btn");
         eleUpdate.setAttribute("id", `update-btn${uniqueId}`);
