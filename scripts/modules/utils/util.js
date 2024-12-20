@@ -22,6 +22,11 @@ class Util {
             Util.setMultipleAttr(inputEle, labelAttr[type].detailAttr);
         }
     }
+    static ifElementExist(ele) {
+        if(ele != null){
+            ele.remove();
+        }
+    }
 }
 
 export {Util};

@@ -1,3 +1,4 @@
+import { AddController } from "../controllers/addController.js";
 import { Util } from "../utils/util.js";
 
 
@@ -21,6 +22,9 @@ class AddBtn {
         refAddDiv.append(addBtn);
         Util.setMultipleAttr(addBtn, btnAttr);
         addBtn.textContent = "Add";
+    }
+    setEventListener() {
+        const addBtnController = new AddController();
     }
 }
 

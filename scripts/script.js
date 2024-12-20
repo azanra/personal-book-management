@@ -23,13 +23,14 @@ bookArr.newBook("2", "anotherTitle", "anotherAuthor", "anotherGenre", "anotherSy
 // anotherArr.deleteBook("3");
 
 let createBtn = new AddBtn();
+createBtn.setEventListener();
 let readView = new ReadView();
 bookArr.bookContainer();
 bookArr.printBook();
 bookArr.buttonContainer();
 
 
-// let createViewEle = new CreateView();
+let createViewEle = new CreateView();
 // let updateViewEle = new UpdateView();
 // let detailView = new DetailView();
-let deleteView = new DeleteView();
+// let deleteView = new DeleteView();
