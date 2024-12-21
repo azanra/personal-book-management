@@ -12,6 +12,8 @@ let bookArr = new Books();
 bookArr.newBook("1", "title", "author", "genre", "synopsis");
 bookArr.newBook("2", "anotherTitle", "anotherAuthor", "anotherGenre", "anotherSynopsis")
 
+console.log(bookArr);
+
 
 // let anotherArr = new Books();
 // anotherArr.newBook("id", "title", "author", "genre", "synopsis");

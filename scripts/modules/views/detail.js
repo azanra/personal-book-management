@@ -6,11 +6,11 @@ import { Element } from "./forms/element.js";
 import { labelAttr } from "./forms/eleAttr/labelAttr.js";
 
 class DetailView {
-    constructor() {
+    constructor(book) {
         const detailFieldset = new Fieldset(2);
         const detailLegend = new Legend(2);
 
-        const detailIdLabel = new Label(0, 2);
+        const detailIdLabel = new Label(0, 2, book.id);
         const detailIdInput = new Input(0, "detail");
 
         const detailTitleLabel = new Label(1, 2);

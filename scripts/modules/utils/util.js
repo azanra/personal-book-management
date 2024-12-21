@@ -27,6 +27,11 @@ class Util {
             ele.remove();
         }
     }
+    static ifValueExist(element, inputValue) {
+        if(inputValue != null) {
+            element.value = inputValue
+        }
+    }
 }
 
 export {Util};
