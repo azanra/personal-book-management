@@ -19,11 +19,12 @@ class ReadView {
         const refBookContainer = document.querySelector(".read-container");
         refBookContainer.append(bookContainer); 
     }
-    static bookButton(uniqueId) {
+
+    static bookButton(uniqueId, bookArr) {
         const detailButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[3].eleAttr, "Detail");
         const eleDetail = document.querySelector("#detail-btn");
         eleDetail.setAttribute("id", `detail-btn-${uniqueId}`);
-        ReadController.detailController(eleDetail);
+        ReadController.detailController(eleDetail, bookArr);
 
         const updateButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[1].eleAttr, "Update");
         const eleUpdate = document.querySelector("#update-btn");
@@ -33,6 +34,7 @@ class ReadView {
         const eleDelete = document.querySelector("#delete-btn");
         eleDelete.setAttribute("id", `delete-btn-${uniqueId}`);
     }
+
 }
 
 export {ReadView};

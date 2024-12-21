@@ -10,20 +10,20 @@ class DetailView {
         const detailFieldset = new Fieldset(2);
         const detailLegend = new Legend(2);
 
-        const detailIdLabel = new Label(0, 2, book.id);
-        const detailIdInput = new Input(0, "detail");
+        const detailIdLabel = new Label(0, 2);
+        const detailIdInput = new Input(0, "detail", book.id);
 
         const detailTitleLabel = new Label(1, 2);
-        const detailTitleInput = new Input(1, "detail");
+        const detailTitleInput = new Input(1, "detail", book.title);
 
         const detailAuthorLabel = new Label(2, 2);
-        const detailAuthorInput = new Input(2, "detail");
+        const detailAuthorInput = new Input(2, "detail", book.author);
 
         const detailGenreLabel = new Label(3, 2);
-        const detailGenreInput = new Input(3, "detail");
+        const detailGenreInput = new Input(3, "detail", book.genre);
 
         const detailSynopsisLabel = new Label(4, 2);
-        const detailSynopsisArea = new Element(".synopsis-container", "textarea", labelAttr[4].detailAttr);
+        const detailSynopsisArea = new Element(".synopsis-container", "textarea", labelAttr[4].detailAttr, book.synopsis);
 
     }
 }
