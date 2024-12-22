@@ -7,12 +7,12 @@ import { Element } from "./forms/element.js";
 import { btnAttr } from "./forms/btnAttr/btnAttr.js";
 
 class UpdateView {
-    constructor() {
+    constructor(book) {
         const updateFieldset = new Fieldset(1);
         const updateLegend = new Legend(1);
 
         const updateIdLabel = new Label(0, 1);
-        const updateIdInput = new Input(0, "update");
+        const updateIdInput = new Input(0, "update", book.id);
 
         const updateTitleLabel = new Label(1, 1);
         const updateTitleInput = new Input(1, "update");

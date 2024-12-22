@@ -7,6 +7,7 @@ class AddController {
         addBtn.addEventListener("click", () => {
             Util.ifElementExist(Util.referenceEle("#detail-section"));
             Util.ifElementExist(Util.referenceEle("#input-section"));
+            Util.ifElementExist(Util.referenceEle("#update-section"));
             const createView = new CreateView();
         })
     }
