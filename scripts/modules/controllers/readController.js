@@ -6,9 +6,13 @@ class ReadController {
     static detailController(detailBtn, bookArr) {
         detailBtn.addEventListener("click", () => {
             const containerId = detailBtn.parentNode.id;
+            Util.ifElementExist(Util.referenceEle("#input-section"));
             Util.ifElementExist(Util.referenceEle("#detail-section"));
             const detailView = new DetailView(bookArr.findBook(containerId));
         })
+    }
+    static updateController() {
+        
     }
 }
 
