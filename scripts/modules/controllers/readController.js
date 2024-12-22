@@ -20,6 +20,13 @@ class ReadController {
             Util.ifElementExist(Util.referenceEle("#update-section"));
             const containerId = updateBtn.parentNode.id;
             const updateView = new UpdateView(bookArr.findBook(containerId));
+            ReadController.updateListener();
+        })
+    }
+    static updateListener() {
+        const updateSubmitBtn = Util.referenceEle("#update-btn");
+        updateSubmitBtn.addEventListener("click", () => {
+            
         })
     }
 }
