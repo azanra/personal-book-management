@@ -29,7 +29,9 @@ class ReadView {
         const updateButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[1].eleAttr, "Update");
         const eleUpdate = document.querySelector("#update-btn");
         eleUpdate.setAttribute("id", `update-btn${uniqueId}`);
-        ReadController.updateController(eleUpdate, bookArr);
+        ReadController.updateController(eleUpdate, bookArr, uniqueId);
+        console.log(uniqueId);
+        console.log(typeof(uniqueId));
 
         const deleteButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[2].eleAttr, "Delete");
         const eleDelete = document.querySelector("#delete-btn");
