@@ -23,8 +23,8 @@ class AddBtn {
         Util.setMultipleAttr(addBtn, btnAttr);
         addBtn.textContent = "Add";
     }
-    setEventListener() {
-        const addBtnController = new AddController();
+    setEventListener(bookArr) {
+        const addBtnController = new AddController(bookArr);
     }
 }
 

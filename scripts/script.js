@@ -25,7 +25,7 @@ console.log(bookArr);
 // anotherArr.deleteBook("3");
 
 let createBtn = new AddBtn();
-createBtn.setEventListener();
+createBtn.setEventListener(bookArr);
 let readView = new ReadView();
 bookArr.bookContainer();
 bookArr.printBook();
