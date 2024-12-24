@@ -1,4 +1,3 @@
-import { Books } from "../models/books.js";
 import { Util } from "../utils/util.js";
 import { DetailView } from "../views/detail.js";
 import { ReadView } from "../views/read.js";
@@ -14,18 +13,18 @@ class ReadController {
             const detailView = new DetailView(bookArr.findBook(containerId));
         })
     }
-    static updateController(updateBtn, bookArr, uniqueId) {
+    static updateController(updateBtn, bookArr) {
         updateBtn.addEventListener("click", () => {
             Util.ifElementExist(Util.referenceEle("#input-section"));
             Util.ifElementExist(Util.referenceEle("#detail-section"));
             Util.ifElementExist(Util.referenceEle("#update-section"));
             const containerId = updateBtn.parentNode.id;
             const updateView = new UpdateView(bookArr.findBook(containerId));
-            ReadController.updateListener(bookArr, uniqueId);
+            ReadController.updateListener(bookArr);
         })
     }
-    static updateListener(bookArr, uniqueId) {
-        const updateSubmitBtn = Util.referenceEle("#update-btn");
+    static updateListener(bookArr) {
+        const updateSubmitBtn = Util.referenceEle("#update-submit-btn");
         updateSubmitBtn.addEventListener("click", () => {
             const idInput = Util.storeId();
             const titleInput = Util.storeTitle();
@@ -37,9 +36,11 @@ class ReadController {
             bookArr.updateAttr(idInput, titleInput, authorInput, genreInput, synopsisInput);
             console.log(bookArr);
             const readView = new ReadView();
-            bookArr.bookContainer(uniqueId);
+            bookArr.bookContainer();
             bookArr.printBook();
+            bookArr.buttonContainer(bookArr);
 
+            Util.ifElementExist(Util.referenceEle('#update-section'));
         })
     }
 }

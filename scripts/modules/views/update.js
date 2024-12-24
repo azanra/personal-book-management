@@ -28,6 +28,8 @@ class UpdateView {
 
         const updateBtnContainer = new Element("#update-section", "div", btnAttr[2].container);
         const updateBtn = new Element(".update-container", "button", btnAttr[1].eleAttr, "Update");
+        const btnEle = document.querySelector('#update-btn');
+        btnEle.setAttribute("id", "update-submit-btn");
     }
 }
 

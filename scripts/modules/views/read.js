@@ -1,5 +1,4 @@
 import { ReadController } from "../controllers/readController.js";
-import { Util } from "../utils/util.js";
 import { btnAttr } from "./forms/btnAttr/btnAttr.js";
 import { paraAttr } from "./forms/eleAttr/paraAttr.js";
 import { Element } from "./forms/element.js";
@@ -27,11 +26,9 @@ class ReadView {
         ReadController.detailController(eleDetail, bookArr);
 
         const updateButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[1].eleAttr, "Update");
-        const eleUpdate = document.querySelector("#update-btn");
-        eleUpdate.setAttribute("id", `update-btn${uniqueId}`);
+        const eleUpdate =  document.querySelector("#update-btn");
+        eleUpdate.setAttribute("id", `update-btn-${uniqueId}`);
         ReadController.updateController(eleUpdate, bookArr, uniqueId);
-        console.log(uniqueId);
-        console.log(typeof(uniqueId));
 
         const deleteButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[2].eleAttr, "Delete");
         const eleDelete = document.querySelector("#delete-btn");
