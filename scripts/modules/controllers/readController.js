@@ -32,16 +32,19 @@ class ReadController {
             const genreInput = Util.storeGenre();
             const synopsisInput = Util.storeSynopsis();
 
-            Util.ifElementExist(Util.referenceEle(`.read-container`));
             bookArr.updateAttr(idInput, titleInput, authorInput, genreInput, synopsisInput);
             console.log(bookArr);
-            const readView = new ReadView();
-            bookArr.bookContainer();
-            bookArr.printBook();
-            bookArr.buttonContainer(bookArr);
+            ReadController.updateBookView(bookArr);
 
             Util.ifElementExist(Util.referenceEle('#update-section'));
         })
+    }
+    static updateBookView(bookArr) {
+        Util.ifElementExist(Util.referenceEle(`.read-container`));
+        const readView = new ReadView();
+        bookArr.bookContainer();
+        bookArr.printBook();
+        bookArr.buttonContainer(bookArr);
     }
 }
 

@@ -1,5 +1,6 @@
 import { Util } from "../utils/util.js";
 import { CreateView } from "../views/create.js";
+import { ReadController } from "./readController.js";
 
 class AddController {
     constructor(bookArr) {
@@ -23,6 +24,9 @@ class AddController {
     
             bookArr.newBook(idInput, titleInput, authorInput, genreInput, synopsisInput);
             console.log(bookArr);
+            ReadController.updateBookView(bookArr);
+
+            Util.ifElementExist(Util.referenceEle('#input-section'));
         })
     }
 }
