@@ -1,0 +1,17 @@
+:root {
+    --system-ui : system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: "abel", var(--system-ui);
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+    font-size: 1rem;
+}
