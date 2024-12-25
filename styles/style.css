@@ -15,6 +15,25 @@ textarea {
     font-family: inherit;
     font-size: 1rem;
     margin: 10px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 25px;
+    border: 1px solid grey;
+}
+
+input,
+textarea {
+    appearance: none;
+    width: 250px;
+    height: 25px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+textarea {
+    height: 100px;
 }
 
 .synopsis-container {
