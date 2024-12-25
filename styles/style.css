@@ -14,4 +14,10 @@ button,
 textarea {
     font-family: inherit;
     font-size: 1rem;
+    margin: 10px;
+}
+
+.synopsis-container {
+    display: flex;
+    align-items: center;
 }
