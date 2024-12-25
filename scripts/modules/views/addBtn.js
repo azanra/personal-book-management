@@ -1,7 +1,6 @@
 import { AddController } from "../controllers/addController.js";
 import { Util } from "../utils/util.js";
 
-
 class AddBtn {
     constructor() {
         const containerAttr = {

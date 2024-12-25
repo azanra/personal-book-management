@@ -1,6 +1,3 @@
-import { labelAttr } from "../views/forms/eleAttr/labelAttr.js";
-import { Input } from "../views/forms/input.js";
-
 class Util {
     static referenceEle(ele) {
         let element = document.querySelector(ele);

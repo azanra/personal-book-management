@@ -15,16 +15,16 @@ class UpdateView {
         const updateIdInput = new Input(0, "update", book.id);
 
         const updateTitleLabel = new Label(1, 1);
-        const updateTitleInput = new Input(1, "update");
+        const updateTitleInput = new Input(1, "update", book.title);
 
         const updateAuthorLabel = new Label(2, 1);
-        const updateAuthorInput = new Input(2, "update");
+        const updateAuthorInput = new Input(2, "update", book.author);
 
         const updateGenreLabel = new Label(3, 1);
-        const updateGenreInput = new Input(3, "update");
+        const updateGenreInput = new Input(3, "update", book.genre);
 
         const updateSynopsisLabel = new Label(4, 1);
-        const updateSynopsisArea = new Element(".synopsis-container", "textarea", labelAttr[4].attr);
+        const updateSynopsisArea = new Element(".synopsis-container", "textarea", labelAttr[4].attr, book.synopsis);
 
         const updateBtnContainer = new Element("#update-section", "div", btnAttr[2].container);
         const updateBtn = new Element(".update-container", "button", btnAttr[1].eleAttr, "Update");
