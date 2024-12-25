@@ -33,7 +33,8 @@ class ReadView {
         const deleteButton = new Element(`[id='${uniqueId}']`, "button", btnAttr[2].eleAttr, "Delete");
         const eleDelete = document.querySelector("#delete-btn");
         eleDelete.setAttribute("id", `delete-btn-${uniqueId}`);
-    }
+        ReadController.deleteController(eleDelete, uniqueId, bookArr);
+    }   
 
 }
 

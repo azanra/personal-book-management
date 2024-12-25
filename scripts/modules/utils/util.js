@@ -58,6 +58,11 @@ class Util {
         const synopsisValue = synopsisInput.value;
         return synopsisValue;
     }
+    static removeView() {
+        Util.ifElementExist(Util.referenceEle("#input-section"));
+        Util.ifElementExist(Util.referenceEle("#detail-section"));
+        Util.ifElementExist(Util.referenceEle("#update-section"));
+    }
 }
 
 export {Util};

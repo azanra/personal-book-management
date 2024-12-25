@@ -7,17 +7,13 @@ class ReadController {
     static detailController(detailBtn, bookArr) {
         detailBtn.addEventListener("click", () => {
             const containerId = detailBtn.parentNode.id;
-            Util.ifElementExist(Util.referenceEle("#input-section"));
-            Util.ifElementExist(Util.referenceEle("#detail-section"));
-            Util.ifElementExist(Util.referenceEle("#update-section"));
+            Util.removeView();
             const detailView = new DetailView(bookArr.findBook(containerId));
         })
     }
     static updateController(updateBtn, bookArr) {
         updateBtn.addEventListener("click", () => {
-            Util.ifElementExist(Util.referenceEle("#input-section"));
-            Util.ifElementExist(Util.referenceEle("#detail-section"));
-            Util.ifElementExist(Util.referenceEle("#update-section"));
+            Util.removeView();
             const containerId = updateBtn.parentNode.id;
             const updateView = new UpdateView(bookArr.findBook(containerId));
             ReadController.updateListener(bookArr);
@@ -45,6 +41,15 @@ class ReadController {
         bookArr.bookContainer();
         bookArr.printBook();
         bookArr.buttonContainer(bookArr);
+    }
+    static deleteController(deleteBtn, uniqueId, bookArr) {
+        deleteBtn.addEventListener("click", () => {
+            const bookId = uniqueId;
+            bookArr.deleteBook(bookId);
+            console.log(bookArr);
+            ReadController.updateBookView(bookArr);
+            Util.removeView();
+        })
     }
 }
 

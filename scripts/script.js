@@ -29,7 +29,6 @@ createBtn.setEventListener(bookArr);
 let readView = new ReadView();
 bookArr.bookContainer();
 bookArr.printBook();
-
 bookArr.buttonContainer(bookArr);
 
 
