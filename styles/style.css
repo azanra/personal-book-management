@@ -54,3 +54,11 @@ textarea:read-only {
     background-color: rgb(224, 224, 224);
     color: grey;
 }
+
+button:hover {
+    border: 2px solid black;
+}
+
+button:active {
+    padding: 6.5px 26.5px;
+}
