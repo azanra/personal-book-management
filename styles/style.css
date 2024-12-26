@@ -1,5 +1,7 @@
 :root {
     --system-ui : system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --border-radius : 5px;
+    --border: 1px solid black;
 }
 
 body {
@@ -15,7 +17,13 @@ textarea {
     font-family: inherit;
     font-size: 1rem;
     margin: 10px;
-    border-radius: 5px;
+}
+
+input,
+button,
+textarea,
+fieldset {
+    border-radius: var(--border-radius);
 }
 
 button {
@@ -28,7 +36,7 @@ textarea {
     appearance: none;
     width: 250px;
     height: 25px;
-    border: 1px solid black;
+    border: var(--border);
     padding: 5px;
 }
 
@@ -39,4 +47,10 @@ textarea {
 .synopsis-container {
     display: flex;
     align-items: center;
+}
+
+input:read-only,
+textarea:read-only {
+    background-color: rgb(224, 224, 224);
+    color: grey;
 }
