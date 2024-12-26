@@ -2,6 +2,12 @@
     --system-ui : system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --border-radius : 5px;
     --border: 1px solid black;
+    --main-bg: rgb(17, 24, 39);
+    --contrast-bg: rgb(30, 30, 44);
+    --write-bg: rgb(43, 43, 63);
+    --text-color: white;
+    --read-only-text: grey;
+    --button-hover-bg: rgb(204, 204, 204);
 }
 
 body {
@@ -9,6 +15,12 @@ body {
    justify-content: center;
    align-items: center;
    font-family: "abel", var(--system-ui);
+   background-color: var(--main-bg);
+   color: var(--text-color);
+}
+
+fieldset {
+    background-color: var(--contrast-bg);
 }
 
 input,
@@ -28,7 +40,9 @@ fieldset {
 
 button {
     padding: 5px 25px;
-    border: 1px solid grey;
+    border: 1px solid white;
+    background-color: var(--main-bg);
+    color: var(--text-color);
 }
 
 input,
@@ -38,6 +52,9 @@ textarea {
     height: 25px;
     border: var(--border);
     padding: 5px;
+    background-color: var(--write-bg);
+    border: 1px solid white;
+    color: var(--text-color);
 }
 
 textarea {
@@ -51,12 +68,13 @@ textarea {
 
 input:read-only,
 textarea:read-only {
-    background-color: rgb(224, 224, 224);
-    color: grey;
+    background-color: var(--contrast-bg);
+    color: var(--read-only-text);
+    border: 1px solid gray;
 }
 
 button:hover {
-    border: 2px solid black;
+    background-color: var(--button-hover-bg);
 }
 
 button:active {
